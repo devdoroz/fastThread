@@ -11,7 +11,7 @@ if runService:IsClient() then
 end
 
 function fastThreads:Hook(func: () -> nil)
-	value.Changed:Connect(func)
+	return value.Changed:Connect(func)
 end
 
 task.spawn(function()
