@@ -17,7 +17,7 @@ end
 task.spawn(function()
 	
 	while true do
-		loops[loopIndex]:Wait()
+		task.wait(0.1)
 		loopIndex += 1
 		value.Value += 1
 		
